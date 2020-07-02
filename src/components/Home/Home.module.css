@@ -1,7 +1,40 @@
 .Home {
     background-image: url('../../assets/images/cover.jpg');
     background-size: cover;
-    background-position: 0 -48px;
+    background-position: center;
     width: 100%;
     min-height: 100vh;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: rgba(23, 24, 32, 0.5);
+    color: #FFFFFF;
+}
+.homeContent h1 {
+    font-size: 48px;
+}
+.homeContent p {
+    margin: 0 16px;
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 768px) {
+    .homeContent p {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .homeContent h1 {
+        font-size: 44px;
+    }
+    .homeContent p {
+        font-size: 24px;
+    }
 }
