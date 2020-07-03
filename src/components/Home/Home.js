@@ -5,6 +5,7 @@ import Navbar from '../UI/Navbar/Navbar';
 import Cover from './Cover';
 import LatestMusic from './LatestMusic';
 import LatestLTV from './LatestLTV';
+import Footer from './Footer';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Cover />
             <LatestMusic />
             <LatestLTV />
+            <Footer />
         </div>
     )
 }

@@ -1,0 +1,15 @@
+.Footer {
+    background: #272833;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+}
