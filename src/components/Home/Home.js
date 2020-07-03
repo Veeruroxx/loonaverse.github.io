@@ -4,6 +4,7 @@ import styles from './Home.module.css';
 import Navbar from '../UI/Navbar/Navbar';
 import Cover from './Cover';
 import LatestMusic from './LatestMusic';
+import LatestLTV from './LatestLTV';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Navbar />
             <Cover />
             <LatestMusic />
+            <LatestLTV />
         </div>
     )
 }
