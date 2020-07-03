@@ -1,4 +1,4 @@
-.navbar {
+.navbarMobile {
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,27 +7,53 @@
     display: flex;
     justify-content: left;
 }
-.navCollapseBtn {
+.navMobileCollapseBtn {
     all: unset;
     background-color: #E44C65;
     min-height: 100%;
     width: 76px;
 }
-.navCollapseBtn hr {
+.navMobileCollapseBtn hr {
     border: 1px solid white;
     width: 50%;
+    margin: 12px auto;
 }
-.navHeader {
+.navMobileHeader {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
 }
-.navHeader h1 {
+.navMobileHeader h1 {
     color: #FFFFFF;
     margin: 0;
 }
+
+
+.navbarFull {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #272833;
+    display: flex;
+    flex-direction: column;   
+}
+
+.navbarFullLogo {
+    color: #FFFFFF;
+    height: 75px;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 
 .NavbarExpand { 
     position: absolute;
@@ -35,7 +61,7 @@
     background: #1C1D26;
     mix-blend-mode: hard-light;
     width: 79%;
-    height: 100%;
+    height: calc(100% - 6.89vh);
     display: flex;
     flex-direction: column;
 }
@@ -70,5 +96,27 @@
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     .NavbarExpand {
         width: 66%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+
+    .NavbarExpand {
+        min-width: 360px;
+        width: 20%;
+        height: 100%;
+        margin: 0;
+    }
+    .navbarExpTab {
+        margin-left: 100px;
+    }
+    .navbarExpTabText {
+        width: 100%;
+    }
+    .navbarExpLogo {
+        display: none;
     }
 }

@@ -10,7 +10,17 @@ const NavbarExpand = (props) => {
     }
 
     return (
-        <div className={styles.NavbarExpand} style={navPosition}>
+        <div 
+            className={styles.NavbarExpand} 
+            style={navPosition}
+            onMouseLeave={() => props.vertical && props.expanded ? props.setExpanded(false) : null}
+        >
+            {props.vertical ?
+                <div className={styles.navbarExpTab}>
+                    <div className={styles.navbarExpLogo}>O</div>
+                    <div className={styles.navbarExpTabText}>LOOΠΔVERSE</div>
+                </div>
+            : null}
             <div className={styles.navbarExpTab}>
                 <div className={styles.navbarExpLogo}>O</div>
                 <div className={styles.navbarExpTabText}>Home</div>
@@ -31,7 +41,7 @@ const NavbarExpand = (props) => {
                 <div className={styles.navbarExpLogo}>O</div>
                 <div className={styles.navbarExpTabText}>About</div>
             </div>
-            <div className={styles.navbarExpTab} style={{ justifyContent: 'flex-end' }}>
+            <div className={styles.navbarExpTab}>
                 <div className={styles.navbarExpLogo}>O</div>
                 <div className={styles.navbarExpTabText}>Stream</div>
             </div>

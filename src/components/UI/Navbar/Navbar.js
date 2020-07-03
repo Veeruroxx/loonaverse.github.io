@@ -1,24 +1,21 @@
 import React, { useState } from 'react';
 
 import styles from './Navbar.module.css';
+import NavbarMobile from './NavbarMobile';
 import NavbarExpand from './NavbarExpand';
+import useWindowDimensions from '../../utilities/useWindowDimensions';
+import NavbarFull from './NavbarFull';
 
 const Navbar = () => {
     const [expanded, setExpanded] = useState(false);
-
+    const { width } = useWindowDimensions();
     return (
         <div>
-            <div className={styles.navbar}>
-                <button className={styles.navCollapseBtn} onClick={() => setExpanded(!expanded)}>
-                    <hr />
-                    <hr />
-                    <hr />
-                </button>
-                <div className={styles.navHeader}>
-                    <h1>LOOΠΔVERSE</h1>
-                </div>
-            </div>
-            <NavbarExpand expanded={expanded}/>
+            {width < 1024 ? 
+                <NavbarMobile expanded={expanded} setExpanded={setExpanded}/> : 
+                <NavbarFull expanded={expanded} setExpanded={setExpanded}/>    
+            }
+            <NavbarExpand expanded={expanded} setExpanded={setExpanded} vertical={width >= 1024} />
         </div>
     )
 }
