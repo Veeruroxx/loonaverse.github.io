@@ -24,6 +24,12 @@
     font-size: 36px;
 }
 
+@media only screen and (min-width: 1024px) {
+    .homeContent {
+        margin-left: 100px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .homeContent p {
         font-size: 28px;

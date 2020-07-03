@@ -2,16 +2,14 @@ import React from 'react';
 
 import styles from './Home.module.css';
 import Navbar from '../UI/Navbar/Navbar';
+import Cover from './Cover';
+import LatestMusic from './LatestMusic';
 
 const Home = () => {
     return (
-        <div className={styles.Home}>
+        <div>
             <Navbar />
-            <div className={styles.homeContent}>
-                <h1>LOOΠΔVERSE</h1>
-                <p>A content aggregator of the Korean girl group LOOΠΔ.</p>
-                <p>Check back frequently for updates!</p>
-            </div>
+            <Cover />
         </div>
     )
 }
