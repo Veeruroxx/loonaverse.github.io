@@ -1,0 +1,56 @@
+.LatestMusic {
+    margin-left: 100px;
+    height: 100vh;
+}
+
+.embedContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+}
+
+.embedContainer iframe,
+.embedContainer object,
+.embedContainer embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.musicDesc {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    height: 40%;
+    background-color: #272833;
+    border-top: 8px solid #E44C65;
+    mix-blend-mode: hard-light;
+}
+
+.musicDescTitle {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.musicDescText {
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    white-space: pre-line;
+    height: 100%;
+    margin: 0;
+}
