@@ -12,4 +12,7 @@
 .socialIcons {
     display: flex;
     flex-direction: row;
+    width: 24%;
+    justify-content: space-evenly;
+    margin: 24px auto;
 }

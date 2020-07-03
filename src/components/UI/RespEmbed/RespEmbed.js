@@ -5,7 +5,7 @@ import styles from './RespEmbed.module.css';
 const RespEmbed = (props) => {
     return (
         <div className={styles.embedContainer}>
-            <iframe src={props.src} frameborder='0' allowfullscreen allow="fullscreen" />
+            <iframe src={props.link} frameborder='0' allowfullscreen allow="fullscreen" />
         </div>
     )
 }
